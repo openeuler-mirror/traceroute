@@ -1,7 +1,7 @@
 Name:               traceroute
 Epoch:              3
 Version:            2.1.0
-Release:            9
+Release:            10
 Summary:            A new modern implementation of traceroute(8) utility for Linux systems
 License:            GPLv2+
 URL:                http://traceroute.sourceforge.net/
@@ -47,7 +47,7 @@ popd
 
 %files
 %defattr(-,root,root)
-%doc COPYING
+%license COPYING
 /bin/*
 %{_bindir}/*
 
@@ -57,6 +57,12 @@ popd
 %{_mandir}/*/*
 
 %changelog
+* Sat Oct 19 2019 openEuler Buildteam <buildteam@openeuler.org> - 2.1.0-10
+- Type:bugfix
+- Id:NA
+- SUG:NA
+- DESC:change the directory of the license file
+
 * Fri Sep 06 2019 openEuler Buildteam <buildteam@openeuler.org> - 2.1.0-9
 - Type: enhancement
 - ID: NA
