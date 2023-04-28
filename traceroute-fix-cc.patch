@@ -1,0 +1,11 @@
+--- a/Make.rules	2016-02-21 04:39:46.000000000 +0800
++++ b/Make.rules	2023-04-19 17:37:07.138981963 +0800
+@@ -36,7 +36,7 @@
+ 
+ 
+ $(call set, CROSS, )
+-$(call set, CC, $$(CROSS)gcc)
++$(call set, CC, $$(CROSS)$(CC))
+ $(call set, AS, $$(CROSS)as)
+ $(call set, LD, $$(CROSS)ld)
+ $(call set, DEPEND, $$(CROSS)gcc -MM -MG)
