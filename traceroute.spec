@@ -1,11 +1,12 @@
 Name:               traceroute
 Epoch:              3
 Version:            2.1.1
-Release:            1
+Release:            2
 Summary:            A new modern implementation of traceroute(8) utility for Linux systems
 License:            GPLv2+
 URL:                http://traceroute.sourceforge.net/
 Source0:            https://udomain.dl.sourceforge.net/project/traceroute/traceroute/traceroute-2.1.1/traceroute-2.1.1.tar.gz
+Patch0:             traceroute-fix-cc.patch
 
 Provides:           tcptraceroute = 1.5-1
 Obsoletes:          tcptraceroute < 1.5-1
@@ -57,6 +58,9 @@ popd
 %{_mandir}/*/*
 
 %changelog
+* Wed Apr 19 2023 Xiaoya Huang <huangxiaoya@iscas.ac.cn> - 3:2.1.1-2
+- Fix CC compiler support
+
 * Thu Feb 2 2023 Cao Jingbo <caojb@chinatelecom.cn> - 3:2.1.1-1
 - Type:enhancement
 - Id:NA
